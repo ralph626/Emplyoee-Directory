@@ -1,13 +1,18 @@
 export default function EmployeeCard(props) {
   return (
-    <div className="col-2 p-4">
+    <div className="col-lg-2 col-md-3 col-sm-4 col-xs-6 p-2">
       <div className="card rounded shadow-lg">
         <img src={props.picture.large} class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">
+            {props.name.first} {props.name.last}
+          </h5>
           <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            <ul>
+              <li>{props.email}</li>
+
+              <li>{props.phone}</li>
+            </ul>
           </p>
           <a href="/#" class="btn btn-primary">
             Contact (persons name)
