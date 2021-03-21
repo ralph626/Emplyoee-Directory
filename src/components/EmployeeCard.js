@@ -14,9 +14,9 @@ export default function EmployeeCard(props) {
               <li>{props.phone}</li>
             </ul>
           </p>
-          <a href="/#" class="btn btn-primary">
+          <div className="btn btn-primary" style={{ fontWeight: "bold" }}>
             Contact {props.name.first}
-          </a>
+          </div>
         </div>
       </div>
     </div>
