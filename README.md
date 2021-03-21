@@ -6,13 +6,13 @@ Employee directory with React. Use Components to break down the app's UI. manage
 
 A workout tracker. Using Mongo database with Mongoose schema and handle routes with express
 
-![Logo of the project](screenshoot goes here)
+![Logo of the project](https://github.com/ralph626/Emplyoee-Directory/blob/main/images/EmplyoeeDirectoryHomepage.PNG?raw=true)
 
 A link to a demonstration of the app:
 
 <!-- link to the demo -->
 
-# Budget-Tracker Description:
+# Employee-Directory Description:
 
 <!-- small description goes here -->
 
@@ -41,15 +41,18 @@ node server.js
 
 link to the Deployed application
 
-<!-- heroku link goes here -->
+<!-- missing gh page/ homepage install  -->
+
+https://ralph626.github.io/Emplyoee-Directory
 
 ## Features
 
+<!-- Check in with Chad -->
 <!-- add 3 things about the application -->
 
 - Look up employees through filters
--
--
+- see the employees contact information
+- sort by category
 
 ## Contributing
 
@@ -58,12 +61,9 @@ branch. Pull requests are warmly welcome."
 
 ## Links
 
-Deploy on Heroku: https://ralphs-budget-tracker.herokuapp.com/
+- Project homepage: https://ralph626.github.io/Emplyoee-Directory
 
-- Project homepage:
-
-- Repository:https://github.com/ralph626/Budget-Tracker
-- Issue tracker: https://github.com/coding-boot-camp/unit18hw/issues
+- Repository: https://github.com/ralph626/Emplyoee-Directory
   - In case of sensitive bugs like security vulnerabilities, please contact
     ralph.o@email.com directly instead of using issue tracker. We value your effort
     to improve the security and privacy of this project!
