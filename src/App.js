@@ -5,10 +5,12 @@ import EmployeeCard from "./components/EmployeeCard";
 export default function App() {
   const [users, setUsers] = useState([]);
   const [filteredUsers, setFilteredUsers] = useState([]);
+  const [sortedUsers, setSortedUsers] = useState({ users: [] });
   useEffect(() => {
     getRandomUsers(100).then(({ data }) => {
       setUsers(data.results);
       setFilteredUsers(data.results);
+      setSortedUsers({ users: data.results });
     });
   }, []);
 
@@ -23,6 +25,23 @@ export default function App() {
       );
     });
     setFilteredUsers(filteredUsers);
+    setSortedUsers({ users: filteredUsers });
+  };
+
+  const sortUser = (key) => {
+    const [key1, key2] = key.split(".");
+    const sorted = filteredUsers.sort((a, b) => {
+      if (key2) {
+        return a[key1][key2] < b[key1][key2]
+          ? -1
+          : a[key1][key2] > b[key1][key2]
+          ? 1
+          : 0;
+      }
+      return a[key1] < b[key1] ? -1 : a[key1] > b[key1] ? 1 : 0;
+    });
+
+    setSortedUsers({ users: sorted });
   };
 
   return (
@@ -36,8 +55,34 @@ export default function App() {
           </div>
         </span>
       </h1>
+      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+        <button
+          onClick={() => sortUser("name.first")}
+          className="btn btn-lg btn-secondary"
+        >
+          Sort By First Name
+        </button>
+        <button
+          onClick={() => sortUser("name.last")}
+          className="btn btn-lg btn-secondary"
+        >
+          Sort By Last Name
+        </button>
+        <button
+          onClick={() => sortUser("email")}
+          className="btn btn-lg btn-secondary"
+        >
+          Sort By Email
+        </button>
+        <button
+          onClick={() => sortUser("phone")}
+          className="btn btn-lg btn-secondary"
+        >
+          Sort By Number
+        </button>
+      </div>
       <div className="row">
-        {filteredUsers.map((user) => (
+        {sortedUsers.users.map((user) => (
           <EmployeeCard {...user} />
         ))}
       </div>

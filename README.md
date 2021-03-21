@@ -39,11 +39,7 @@ node server.js
 
 ### Deploying / Publishing
 
-link to the Deployed application
-
-<!-- missing gh page/ homepage install  -->
-
-https://ralph626.github.io/Emplyoee-Directory
+Heroku: https://ralph-employee-dir.herokuapp.com/
 
 ## Features
 
@@ -61,7 +57,7 @@ branch. Pull requests are warmly welcome."
 
 ## Links
 
-- Project homepage: https://ralph626.github.io/Emplyoee-Directory
+- Project homepage:https://ralph-employee-dir.herokuapp.com/
 
 - Repository: https://github.com/ralph626/Emplyoee-Directory
   - In case of sensitive bugs like security vulnerabilities, please contact
