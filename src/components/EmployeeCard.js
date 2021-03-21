@@ -15,7 +15,7 @@ export default function EmployeeCard(props) {
             </ul>
           </p>
           <a href="/#" class="btn btn-primary">
-            Contact (persons name)
+            Contact {props.name.first}
           </a>
         </div>
       </div>
