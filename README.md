@@ -8,13 +8,13 @@ A workout tracker. Using Mongo database with Mongoose schema and handle routes w
 
 ![Logo of the project](https://github.com/ralph626/Emplyoee-Directory/blob/main/images/EmplyoeeDirectoryHomepage.PNG?raw=true)
 
-A link to a demonstration of the app:
-
-<!-- link to the demo -->
+A link to a demonstration of the app: https://drive.google.com/file/d/1xSAZLGpg4e2MT7EqWG_FcpYY_7vvhZX-/view
 
 # Employee-Directory Description:
 
-<!-- small description goes here -->
+The Employee Directory can help the user search through the different employees
+by their first, last, email, or their phone numbers.
+The user can filter the employees by typing what the user is looking for.
 
 ## Installing
 
@@ -42,9 +42,6 @@ node server.js
 Heroku: https://ralph-employee-dir.herokuapp.com/
 
 ## Features
-
-<!-- Check in with Chad -->
-<!-- add 3 things about the application -->
 
 - Look up employees through filters
 - see the employees contact information

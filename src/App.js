@@ -78,7 +78,7 @@ export default function App() {
           onClick={() => sortUser("phone")}
           className="btn btn-lg btn-secondary"
         >
-          Sort By Number
+          Sort By Phone Number
         </button>
       </div>
       <div className="row">
